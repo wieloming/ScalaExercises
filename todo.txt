@@ -1,0 +1,13 @@
+Functional:
+MAP
+MAP2
+List
+ListImmutable
+OptionMonad
+ExceptionMonad
+Promise
+Simple Pipe
+
+DataStructures
+
+Sorting algorithms
