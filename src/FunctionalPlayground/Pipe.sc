@@ -1,13 +1,11 @@
-type function[T, M] = T => M
-
-def pipe(values: _*): Any ={
-  if(values.size == 1){
+def pipe(values: Function[_, _]*): Seq[Function[_, _]] = {
+  if (values.size == 1) {
     Seq(values(0))
   }
-  else if(values.size == 2){
-    val f1 = values(0)
-    val f2 = values(1)
-    (value:Any) => f2(f1(value))
+  else if (values.size == 2) {
+    val f1: Function[_, _] = values(0)
+    val f2: Function[_, _] = values(1)
+    (value: _) => f2(f1(value))
   }
   else {
     val newValues = pipe(values(0), values(1)) ++ values.tail.tail
@@ -15,7 +13,7 @@ def pipe(values: _*): Any ={
   }
 }
 
-def returnOne:function[Int, Int] = (num) => 1
-def addTwo():function[Int, Int] = (num) => num + 2
+def returnOne: Function[Int, Int] = (num: Int) => 1
+def addTwo(): Function[Int, Int] = (num) => num + 2
 
-pipe(returnOne, addTwo)
+pipe(returnOne, addTwo())
