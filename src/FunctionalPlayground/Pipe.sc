@@ -1,19 +1,21 @@
-def pipe(values: Function[_, _]*): Seq[Function[_, _]] = {
-  if (values.size == 1) {
-    Seq(values(0))
+def pipe[T](values: Function[T, T]*): Function[T, T] = {
+  def pipeToSeq(values: Function[T, T]*): Seq[Function[T, T]] = {
+    if (values.size == 1) {
+      Seq(values(0))
+    }
+    else if (values.size == 2) {
+      val f1: Function[T, T] = values(0)
+      val f2: Function[T, T] = values(1)
+      Seq((v:T) => f2(f1(v)))
+    }
+    else {
+      val newValues: Seq[Function[T, T]] = pipeToSeq(values(0), values(1)) ++ values.tail.tail
+      pipeToSeq(newValues:_*)
+    }
   }
-  else if (values.size == 2) {
-    val f1: Function[_, _] = values(0)
-    val f2: Function[_, _] = values(1)
-    (value: _) => f2(f1(value))
-  }
-  else {
-    val newValues = pipe(values(0), values(1)) ++ values.tail.tail
-    pipe(newValues)
-  }
+  pipeToSeq(values:_*).head
 }
-
-def returnOne: Function[Int, Int] = (num: Int) => 1
+def addOne(): Function[Int, Int] = (num: Int) => num + 1
 def addTwo(): Function[Int, Int] = (num) => num + 2
-
-pipe(returnOne, addTwo())
+def addThree(): Function[Int, Int] = (num) => num + 3
+pipe(addOne(), addTwo(), addThree())(8)

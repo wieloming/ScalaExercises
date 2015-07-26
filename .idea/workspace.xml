@@ -26,27 +26,27 @@
         <entry file="file://$PROJECT_DIR$/src/FunctionalPlayground/GenList.sc">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pipe.sc" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Pipe.sc" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FunctionalPlayground/Pipe.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25179857">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.50359714">
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nextNextTen.sc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nextNextTen.sc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ScalaProblems/nextNextTen.sc">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.78417265">
-              <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+              <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -94,12 +94,12 @@
         <option value="$PROJECT_DIR$/src/FunctionalPlayground/ImmutableList.sc" />
         <option value="$PROJECT_DIR$/src/FunctionalPlayground/GenList.sc" />
         <option value="$PROJECT_DIR$/src/FunctionalPlayground/OptionMonad.sc" />
-        <option value="$PROJECT_DIR$/src/FunctionalPlayground/Pipe.sc" />
         <option value="$PROJECT_DIR$/src/ScalaProblems/FirstPart.sc" />
         <option value="$PROJECT_DIR$/src/ScalaProblems/FirstFifteen.sc" />
         <option value="$PROJECT_DIR$/src/ScalaProblems/SecondFifteen.sc" />
         <option value="$PROJECT_DIR$/src/ScalaProblems/nextTen.sc" />
         <option value="$PROJECT_DIR$/src/ScalaProblems/nextNextTen.sc" />
+        <option value="$PROJECT_DIR$/src/FunctionalPlayground/Pipe.sc" />
       </list>
     </option>
   </component>
@@ -968,14 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FunctionalPlayground/GenList.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.6-sources.jar!/scala/Predef.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334">
@@ -1051,14 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FunctionalPlayground/Pipe.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25179857">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ScalaProblems/nextTen.sc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7505995">
@@ -1070,7 +1054,23 @@
     <entry file="file://$PROJECT_DIR$/src/ScalaProblems/nextNextTen.sc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.78417265">
-          <caret line="46" column="83" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+          <caret line="46" column="45" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FunctionalPlayground/GenList.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FunctionalPlayground/Pipe.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50359714">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
