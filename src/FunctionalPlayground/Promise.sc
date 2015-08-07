@@ -1,5 +1,3 @@
-//TODO: have no idea why it is not working, something with threads
-
 class PROMISE[T] {
   var callback = (result: T) => {}
 
@@ -11,6 +9,7 @@ class PROMISE[T] {
 def getTest: PROMISE[String] = {
   val promise: PROMISE[String] = new PROMISE
 
+
   val thread = new Thread {
     override def run() {
       println("Thread starts and goes to sleep")
@@ -21,6 +20,7 @@ def getTest: PROMISE[String] = {
   }
 
   thread.start()
+  thread.join(5000)
   println("get test working")
   promise
 }
