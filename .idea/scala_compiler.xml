@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ScalaCompilerConfiguration">
     <option name="implicitConversions" value="true" />
+    <option name="higherKinds" value="true" />
     <parameters>
       <parameter value="-deprecation" />
     </parameters>

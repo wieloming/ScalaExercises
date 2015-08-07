@@ -1,4 +1,4 @@
-
+//TODO: dokoñczyæ Huffman algorithm
 
 //P46 (**) Truth tables for logical expressions.
 //Define functions and, or, nand, nor, xor, impl, and equ (for logical equivalence) which return true or false according to the result of their respective operations; e.g. and(A, B) is true if and only if both A and B are true.
