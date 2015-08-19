@@ -1,4 +1,3 @@
-//TODO: zrozumieæ typowanie
 trait GenericCategory[->>[_, _]] {
   def ID[A]: A ->> A
 
@@ -20,8 +19,8 @@ trait Functor[F[_]] extends GenericFunctor[Function, Function, F] {
   final def MAP[A, B](as: F[A])(f: A => B): F[B] =
     MAP(f)(as)
 }
-object Functor{
 
+object Functor {
   def MAP[A, B, F[_]](as: F[A])(f: A => B)(implicit functor: Functor[F]): F[B] =
     functor.MAP(as)(f)
 
@@ -29,19 +28,32 @@ object Functor{
     def MAP[A, B](f: A => B): List[A] => List[B] =
       as => as map f
   }
+
   implicit object OptionFunctor extends Functor[Option] {
     def MAP[A, B](f: A => B): Option[A] => Option[B] =
       o => o map f
   }
+
   implicit object Function0Functor extends Functor[Function0] {
     def MAP[A, B](f: A => B): (() => A) => (() => B) =
       a => () => f(a())
   }
 
-  MAP(List(1, 2, 3))((x:Int) => x + 1)
+  MAP(List(1, 2, 3))((x: Int) => x + 1)
 
   val f = (s: String) => s.length
   val lifted = MAP(() => "abc")(f)
 }
 
+trait Monoid[T] {
+  def zero: T
+
+  def operation(a: T, b: T): T
+}
+
+trait Monad[M[_]] {
+  def apply[T](a: T): M[T]
+
+  def flatMap[T, U](m: M[T])(f: T => M[U]): M[U]
+}
 

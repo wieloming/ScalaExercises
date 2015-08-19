@@ -14,6 +14,9 @@ l1.view zip l2 forall (el => el._1 < el._2)
 List(1, 2, 3) == Vector(1, 2, 3)
 List(1, 2, 3) == (1 to 3)
 
+//triangularNumbers
+val triangular: Stream[Int] = Stream.from(2).scanLeft(1)(_ + _)
+
 
 
 

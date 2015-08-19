@@ -19,3 +19,8 @@ def addOne(): Function[Int, Int] = (num: Int) => num + 1
 def addTwo(): Function[Int, Int] = (num) => num + 2
 def addThree(): Function[Int, Int] = (num) => num + 3
 pipe(addOne(), addTwo(), addThree())(8)
+
+def addA(): Function[String, String] = (s: String) => s + "A"
+def addB(): Function[String, String] = (s: String) => s + "B"
+def addC(): Function[String, String] = (s: String) => s + "C"
+pipe(addA(), addB(), addC())("")

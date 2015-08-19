@@ -15,7 +15,6 @@ def FOLDLEFT(f: (Any, Any) => Any, sum: Any, list: Any): Any =
     case _ =>
   }
 
-
 def MAP(f: Any => Any, list: MyList):MyList = {
   FOLDLEFT((acc, el) => CONS(f(el), acc), NIL, list).asInstanceOf[MyList]
 }
@@ -23,6 +22,5 @@ def MAP(f: Any => Any, list: MyList):MyList = {
 val myList = CONS("a", CONS("b", CONS("c", NIL)))
 
 FOLDLEFT((x:Any, y:Any) => (x, y), "ooo", myList)
-
 
 MAP((el) => println(el + ","), myList)

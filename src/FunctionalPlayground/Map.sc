@@ -8,7 +8,7 @@ def createMap[T](key: String, value: T):Map[T] = (k: String) => {
   }
 }
 
-def concat[T](map1: Map[T], map2: Map[T]) = (key:String) => {
+def concat[T](map1: Map[T], map2: Map[T]):Map[T] = (key:String) => {
   map1(key) match {
     case Some(x) => Some(x)
     case None => map2(key)
