@@ -11,17 +11,6 @@ object Category extends GenericCategory[Function] {
     g compose f
 }
 
-trait Monoid[T] {
-  def id: T
-
-  def operation(a: T, b: T): T
-
-  //Monoid homomorphisms
-  //(a.length + b.length) == (a + b).length
-  //Monoid isomorphisms
-  //If f(g(b)) == b and g(f(a)) == a, f and g form an isomorphism.
-}
-
 trait GenericFunctor[->>[_, _], ->>>[_, _], F[_]] {
   def MAP[A, B](f: A ->> B): F[A] ->>> F[B]
 }
@@ -56,12 +45,6 @@ object Functor {
   val lifted = MAP(() => "abc")(f)
 }
 
-trait Monad[M[_]] {
-  def apply[T](a: T): M[T]
-
-  def flatMap[T, U](m: M[T])(f: T => M[U]): M[U]
-}
-
 trait ApplicativeFunctor[F[_]] extends Functor[F] {
   def lift[A](a: A): F[A]
 
@@ -75,3 +58,16 @@ trait Traverser[Collection[_]] {
                             ctx: ApplicativeFunctor[F]
                             ): F[Collection[B]]
 }
+
+trait Monoid[T] {
+  def id: T
+
+  def operation(a: T, b: T): T
+}
+
+trait Monad[M[_]] {
+  def apply[T](a: T): M[T]
+
+  def flatMap[T, U](m: M[T])(f: T => M[U]): M[U]
+}
+

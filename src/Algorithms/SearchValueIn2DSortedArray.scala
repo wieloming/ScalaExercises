@@ -16,8 +16,8 @@ class SearchValueIn2DSortedArray {
       }
     }
 
-    def isIn2DArray(array: Array[Array[Int]], position: Position): Boolean = {
-      position._1 >= 0 && position._2 <= array(0).length - 1
+    def isIn2DArray(array: Array[Array[Int]], position: Position): Boolean = position match {
+      case (x, y) => x >= 0 && y <= array.head.length - 1
     }
 
     count(array, array.length - 1, 0, key)

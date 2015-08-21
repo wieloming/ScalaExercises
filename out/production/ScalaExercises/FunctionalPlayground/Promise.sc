@@ -1,11 +1,3 @@
-
-
-//class MyPromiseImpl<T> implements MyPromise<T> {
-//  callback:(data:T)=>void;
-//  then(callback) {
-//    this.callback = callback;
-//  }
-//}
 class PROMISE[T] {
   var callback = (result: T) => {}
 
@@ -17,6 +9,7 @@ class PROMISE[T] {
 def getTest: PROMISE[String] = {
   val promise: PROMISE[String] = new PROMISE
 
+
   val thread = new Thread {
     override def run() {
       println("Thread starts and goes to sleep")
@@ -27,6 +20,7 @@ def getTest: PROMISE[String] = {
   }
 
   thread.start()
+  thread.join(5000)
   println("get test working")
   promise
 }

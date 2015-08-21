@@ -9,9 +9,10 @@ def Option(value: Any): OPTION = value match {
 }
 def getOrElse[T](option: OPTION, el: T) = option match {
   case SOME(x) => x
-  case NONE(x) => el
+  case NONE(_) => el
 }
 def liftToOption[T](f: Any => T) = (el: Any) => Option(f(el))
+
 val n = Option(null)
 val s = Option(12)
 

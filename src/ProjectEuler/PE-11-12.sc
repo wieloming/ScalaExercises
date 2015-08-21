@@ -51,7 +51,6 @@ val triangular: Stream[Int] = Stream.from(2).scanLeft(1)(_+_)
 def numberOfDivisors(num: Long) = {
   (1L to num).count(num % _ == 0)
 }
-
-triangular.find(numberOfDivisors(_) == 500).toList
+triangular.find(numberOfDivisors(_) == 10).toList
 
 

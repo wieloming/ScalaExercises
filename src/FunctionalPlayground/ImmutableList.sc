@@ -6,6 +6,7 @@ def CONS(head: Any, tail: Any): MyList =
   (in: String) => in.toUpperCase match {
     case "HEAD" => head
     case "TAIL" => tail
+    case _ => throw new Exception("only head and tail accepted")
   }
 
 def FOLDLEFT(f: (Any, Any) => Any, sum: Any, list: Any): Any =
