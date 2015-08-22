@@ -16,7 +16,7 @@ List(1, 2, 3) == (1 to 3)
 
 //triangularNumbers
 val triangular: Stream[Int] = Stream.from(2).scanLeft(1)(_ + _)
-
+triangular.take(10).force
 
 
 

@@ -1,4 +1,3 @@
-
 //Find the sum of all the multiples of 3 or 5 below 1000
 def sumOfAllMultiples(limit: Int, numbers: Int*) = {
   numbers.flatMap(n => (1 until limit).toList.filter(_ % n == 0)).distinct.sum

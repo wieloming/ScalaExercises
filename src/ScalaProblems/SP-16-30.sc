@@ -37,8 +37,8 @@ def removeAt[T](num: Int, list: List[T]) = {
 removeAt(1, List('a, 'b, 'c, 'd))
 //P21 (*) Insert an element at a given position into a list.
 def insertAt[T](element: T, position: Int, list: List[T]) = {
-  val lists = list.splitAt(position)
-  lists._1 ++ List(element) ++ lists._2
+  val (first, second) = list.splitAt(position)
+  first ++ List(element) ++ second
 }
 insertAt('new, 1, List('a, 'b, 'c, 'd))
 //P22 (*) Create a list containing all integers within a given range.

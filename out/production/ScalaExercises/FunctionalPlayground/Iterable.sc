@@ -1,7 +1,7 @@
 type IteratingFunct = String => Unit
 type List = IteratingFunct => Unit
 
-val NIL: List = (f: IteratingFunct) => {}
+def NIL: List = (f: IteratingFunct) => {}
 
 def CONS(el: String, list: List): List = (f: IteratingFunct) => {
   f(el)

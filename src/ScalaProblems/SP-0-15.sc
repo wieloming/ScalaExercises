@@ -4,7 +4,7 @@ List(1, 1, 2, 3, 5, 8).last
 
 //P02 (*) Find the last but one element of a list.
 val list = List(1, 1, 2, 3, 5, 8)
-list(list.size - 2)
+list.init.last
 
 //P03 (*) Find the Kth element of a list.
 val k = 2
