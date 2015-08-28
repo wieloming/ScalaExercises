@@ -11,40 +11,40 @@ object EncryptDecrypt extends App {
     }
   }
 
-  val lettersConnection = "0"
-  val spaceReplacement = 33
-  val letterMultiplier = 13
-  val sequenceMultiplier = 2
+  val key = 1 to 26
+  val keyMap = ('a' to 'z' zip key).toMap
+  val reverseKeyMap: Map[Int, Char] = keyMap map (_.swap)
 
   def encrypt(string: String): String = {
-    def letterToNumber(char: Char, orElse: Int): Int = {
-      val dict = ('A' to 'Z').zipWithIndex.toMap
-      dict.getOrElse(char.toUpper, orElse)
+    string
+      .split(" ")
+      .map { word =>
+      word
+        .toLowerCase
+        .replaceAll("[^\\p{L}\\p{Nd}]+", "")
+        .map(keyMap)
+        .zip(key)
+        .map({ case (value, keyVal) => (value + keyVal) % 26 })
+        .map(reverseKeyMap)
+        .mkString
     }
-
-    BigInt(
-      string
-        .map(letterToNumber(_, spaceReplacement))
-        .map(_ * letterMultiplier)
-        .mkString(lettersConnection)
-        * sequenceMultiplier
-    ).toString()
+      .mkString(" ")
   }
 
   def decrypt(string: String): String = {
-    def numberToLetter(int: Int, orElse: Char): Char = {
-      val dict = ('A' to 'Z').zipWithIndex.toMap.map(_.swap)
-      dict.getOrElse(int, orElse)
+    string.split(" ").map { word =>
+      word
+        .map(keyMap)
+        .zip(key)
+        .map({ case (value, keyVal) =>
+        val diff = value - keyVal
+        if (diff < 1) 26 + diff
+        else diff
+      })
+        .map(reverseKeyMap)
+        .mkString
     }
-
-    (BigInt(string) / sequenceMultiplier)
-      .toString()
-      .split(lettersConnection)
-      .filterNot(_ == "")
-      .map(_.toInt / letterMultiplier)
-      .map(numberToLetter(_, ' '))
-      .mkString("")
-
+      .mkString(" ")
   }
 
   println("enter message:")

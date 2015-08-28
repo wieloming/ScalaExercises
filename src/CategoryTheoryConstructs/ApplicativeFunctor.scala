@@ -4,7 +4,7 @@ trait ApplicativeFunctor[F[_]] extends Functor[F] {
 
   def PURE[A](a: A): F[A]
 
-  //similar to mam in Functor(only ff is in monad)
+  //similar to map in Functor(only ff is in monad)
   def APPLY[A, B](fa: F[A])(ff: F[A => B]): F[B]
 
   override def MAP[A, B](fa: F[A])(f: A => B): F[B] = {

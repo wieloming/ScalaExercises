@@ -10,7 +10,7 @@ class SearchValueIn2DSortedArray {
       if (isIn2DArray(array, (x, y))) {
         if (array(x)(y) > key) count(array, x - 1, y, key)
         else if (array(x)(y) < key) count(array, x, y + 1, key)
-        else Some.apply((x, y))
+        else Some((x, y))
       } else {
         None
       }

@@ -1,13 +1,13 @@
 package CategoryTheoryConstructs
 
 trait GenericFunctor[->>[_, _], ->>>[_, _], F[_]] {
-  def MAP[A, B](f: A ->> B): F[A] ->>> F[B]
+  def LIFT[A, B](f: A ->> B): F[A] ->>> F[B]
 }
 
-trait Functor[F[_]] {
+trait Functor[F[_]] extends GenericFunctor[Function, Function, F] {
   def MAP[A, B](as: F[A])(f: A => B): F[B]
 
-  def LIFT[A, B](f: A => B): F[A] => F[B] = {
+  override def LIFT[A, B](f: A => B): F[A] => F[B] = {
     fa => MAP(fa)(f)
   }
 
@@ -45,10 +45,13 @@ object Functor {
   }
 
   //TODO: how to implement '?' type
-//  implicit def Function0Functor[X] = new Functor[X=> ?] {
-//    def MAP[A, B](fa: X => A)(f: A => B): X => B =
-//      fa andThen f
-//  }
+  //  implicit def Function0Functor[X] = new Functor[X=> ?] {
+  //    def MAP[A, B](fa: X => A)(f: A => B): X => B =
+  //      fa andThen f
+  //  }
+  implicit def Function0Functor[X] = new Functor[Function0] {
+    override def MAP[A, B](as: () => A)(f: A => B): () => B = () => f(as())
+  }
 
   MAP(List(1, 2, 3))((x: Int) => x + 1)
   val f = (s: String) => s.length
