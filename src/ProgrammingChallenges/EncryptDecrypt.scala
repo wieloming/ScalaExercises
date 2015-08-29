@@ -24,7 +24,7 @@ object EncryptDecrypt extends App {
         .replaceAll("[^\\p{L}\\p{Nd}]+", "")
         .map(keyMap)
         .zip(key)
-        .map({ case (value, keyVal) => (value + keyVal) % 26 })
+        .map({ case (value, keyVal) => ((value + keyVal) % 26) + 1 })
         .map(reverseKeyMap)
         .mkString
     }
@@ -37,7 +37,7 @@ object EncryptDecrypt extends App {
         .map(keyMap)
         .zip(key)
         .map({ case (value, keyVal) =>
-        val diff = value - keyVal
+        val diff = value - keyVal - 1
         if (diff < 1) 26 + diff
         else diff
       })
