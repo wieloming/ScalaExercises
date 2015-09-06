@@ -6,7 +6,7 @@ class FindAllElementsOfLevelInBinaryTree {
 
   type LevelNum = Int
 
-  def find(tree: Tree, levelToSearch: LevelNum):Unit = {
+  def find(tree: Tree, levelToSearch: LevelNum): Unit = {
     findOnLevelRec(tree, 0, levelToSearch).foreach(println)
   }
 

@@ -1,7 +1,7 @@
 import scala.reflect.ClassTag
 
 def arrayFlatten[T: ClassTag](arrayToFlatten: Array[Array[T]]): Array[T] = {
-  var flattenArray: Array[T] = Array[T]()
+  var flattenArray: Array[T] = Array.empty
   for (array <- arrayToFlatten) {
     flattenArray = flattenArray ++ array
   }

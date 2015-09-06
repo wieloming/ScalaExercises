@@ -16,5 +16,8 @@ class PrintAllPermutationsOfAString {
     count(letters, "")
   }
 
+  def count2(letters: String): Unit = {
+    letters.permutations.foreach(println)
+  }
 
 }

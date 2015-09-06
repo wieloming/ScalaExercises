@@ -2,7 +2,6 @@ package Algorithms
 
 import stuff.Tree
 
-
 class FindClosestNumberInBinarySearchTree {
   def count(tree: Tree, number: Int): Any = {
 

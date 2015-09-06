@@ -46,4 +46,14 @@ object ApplicativeFunctor {
         } yield f(a)
       }
     }
+
+    implicit val streamApplicative: ApplicativeFunctor[Stream] = new ApplicativeFunctor[Stream] {
+
+      //continually ads elements to stream...
+      override def PURE[A](a: A): Stream[A] = Stream.continually(a)
+
+      override def APPLY[A, B](fa: Stream[A])(ff: Stream[(A) => B]): Stream[B] = {
+        (fa zip ff).map({case (a, f) => f(a)})
+      }
+    }
 }
