@@ -1,4 +1,4 @@
-package ProgrammingChallenges
+package SmallPrograms
 
 object EncryptDecrypt extends App {
   def askForEncryptDecrypt(): String = {

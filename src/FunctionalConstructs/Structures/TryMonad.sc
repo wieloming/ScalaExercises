@@ -1,6 +1,4 @@
-
 abstract class TRY
-
 case class SUCCESS(value: Any) extends TRY
 case class FAIL(value: Any) extends TRY
 
@@ -11,7 +9,6 @@ def liftToTRY[T, F](fn: T=>F) = (value: T) => {
     case e:Exception => FAIL(e.getMessage)
   }
 }
-
 def pipeTRY[T](values: Function[T, TRY]*): Function[T, TRY] = {
   def pipeToSeq(values: Function[T, TRY]*): Seq[Function[T, TRY]] = {
     if (values.size == 1) {

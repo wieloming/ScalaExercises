@@ -1,4 +1,4 @@
-package ProgrammingChallenges
+package SmallPrograms
 
 object PascalTriangle extends App {
 

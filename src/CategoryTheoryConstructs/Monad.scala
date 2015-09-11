@@ -1,30 +1,36 @@
 package CategoryTheoryConstructs
 
 trait Monad[F[_]] extends ApplicativeFunctor[F] {
-
   override def PURE[A](a: A): F[A]
-
   def FLATMAP[A, B](m: F[A])(f: A => F[B]): F[B]
 
-  override def MAP[A, B](fa: F[A])(f: A => B): F[B] = {
-    FLATMAP(fa)(a => PURE(f(a)))
-  }
-
-  override def APPLY[A, B](fa: F[A])(ff: F[A => B]): F[B] = {
-    FLATMAP(ff)((f: A => B) => MAP(fa)(f))
-  }
-
-  def FLATTEN[A](ffa: F[F[A]]): F[A] = {
-    FLATMAP(ffa)(fa => fa)
-  }
+  override def MAP[A, B](fa: F[A])(f: A => B): F[B] = FLATMAP(fa)(a => PURE(f(a)))
+  override def APPLY[A, B](fa: F[A])(ff: F[A => B]): F[B] = FLATMAP(ff)((f: A => B) => MAP(fa)(f))
+  def FLATTEN[A](ffa: F[F[A]]): F[A] = FLATMAP(ffa)(fa => fa)
 }
 
-trait MonadLaws[F[_]] {
-
+trait MonadLaws {
+  //TODO: find way to implement it
+  //  def flatMapAssociativity[A, B, C](fa: Monad[A], afb: A => Monad[B], bfc: B => Monad[C]) = {
+  //    fa.FLATMAP(afb).FLATMAP(bfc) == fa.FLATMAP(a => afb(a).FLATMAP(b => bfc(b)))
+  //  }
+  //
+  //  def leftIdentity[A, B](a: A, f: A => Monad[B]) = {
+  //    PURE(a).FLATMAP(f) == f(a)
+  //  }
+  //
+  //  def leftIdentity[A](fa: Monad[B]) = {
+  //    fa.FLATMAP(a => PURE(a)) == fa
+  //  }
 }
 
-object MonadLaws {
-  def APPLY[F[_]](implicit f0: Monad[F]): MonadLaws[F] = new MonadLaws[F] {
-    def f = f0
+object Monad {
+  implicit val listMonad: Monad[List] = new Monad[List] {
+    override def PURE[A](a: A): List[A] = List(a)
+    override def FLATMAP[A, B](m: List[A])(f: (A) => List[B]): List[B] = m.flatMap(f)
+  }
+  implicit val optionMonad: Monad[Option] = new Monad[Option] {
+    override def PURE[A](a: A): Option[A] = Option(a)
+    override def FLATMAP[A, B](m: Option[A])(f: (A) => Option[B]): Option[B] = m.flatMap(f)
   }
 }

@@ -2,12 +2,10 @@ type IteratingFunct = String => Unit
 type List = IteratingFunct => Unit
 
 def NIL: List = (f: IteratingFunct) => {}
-
 def CONS(el: String, list: List): List = (f: IteratingFunct) => {
   f(el)
   list(f)
 }
-
 def HEAD(list: List): String = {
   var counter = 0
   var result = ""

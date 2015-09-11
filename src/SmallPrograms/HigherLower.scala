@@ -1,4 +1,4 @@
-package ProgrammingChallenges
+package SmallPrograms
 
 import scala.util.Random
 

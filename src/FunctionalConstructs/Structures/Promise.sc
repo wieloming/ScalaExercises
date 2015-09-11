@@ -9,7 +9,6 @@ class PROMISE[T] {
 def getTest: PROMISE[String] = {
   val promise: PROMISE[String] = new PROMISE
 
-
   val thread = new Thread {
     override def run() {
       println("Thread starts and goes to sleep")
