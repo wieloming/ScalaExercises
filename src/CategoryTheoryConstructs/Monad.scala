@@ -9,19 +9,21 @@ trait Monad[F[_]] extends ApplicativeFunctor[F] {
   def FLATTEN[A](ffa: F[F[A]]): F[A] = FLATMAP(ffa)(fa => fa)
 }
 
-trait MonadLaws {
+trait MonadLaws[F[_]] {
+
+  this: Monad[F] =>
   //TODO: find way to implement it
-  //  def flatMapAssociativity[A, B, C](fa: Monad[A], afb: A => Monad[B], bfc: B => Monad[C]) = {
-  //    fa.FLATMAP(afb).FLATMAP(bfc) == fa.FLATMAP(a => afb(a).FLATMAP(b => bfc(b)))
-  //  }
+//    def flatMapAssociativity[A, B, C](fa: Monad[A], afb: A => Monad[B], bfc: B => Monad[C]) = {
+//      fa.FLATMAP(afb).FLATMAP(bfc) == fa.FLATMAP(a => afb(a).FLATMAP(b => bfc(b)))
+//    }
   //
-  //  def leftIdentity[A, B](a: A, f: A => Monad[B]) = {
-  //    PURE(a).FLATMAP(f) == f(a)
-  //  }
-  //
-  //  def leftIdentity[A](fa: Monad[B]) = {
-  //    fa.FLATMAP(a => PURE(a)) == fa
-  //  }
+    def leftIdentity[A, B](a: A, f: A => F[B]):Boolean = {
+      FLATMAP[A, B](PURE(a))(f) == f(a)
+    }
+
+//    def rightIdentity[F[_], A, B](fa: F[B]) = {
+//      fa.FLATMAP(a => PURE(a)) == fa
+//    }
 }
 
 object Monad {

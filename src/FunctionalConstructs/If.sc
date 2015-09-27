@@ -11,5 +11,3 @@ def FALSE: BOOL = (than: VAL) => (els: VAL) => els
 
 IF(FALSE)(one)(two)()
 IF(TRUE)(one)(two)()
-
-//IF(IF(TRUE)(TRUE)(TRUE))(one)(two)

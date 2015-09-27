@@ -9,7 +9,7 @@ class FindClosestNumberInBinarySearchTree {
       val difference = Math.abs(value - number)
       val deeperDifference = Math.abs(branch.value - number)
       if (difference <= deeperDifference) {
-        System.out.println(value)
+        println(value)
       } else {
         count(branch, number)
       }

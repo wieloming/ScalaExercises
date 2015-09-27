@@ -7,5 +7,6 @@
         <entry key="xml" value="XML" />
       </map>
     </option>
+    <option name="outputLimit" value="400" />
   </component>
 </project>
