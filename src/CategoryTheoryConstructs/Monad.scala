@@ -12,11 +12,11 @@ trait Monad[F[_]] extends ApplicativeFunctor[F] {
 trait MonadLaws[F[_]] {
 
   this: Monad[F] =>
-  //TODO: find way to implement it
-//    def flatMapAssociativity[A, B, C](fa: Monad[A], afb: A => Monad[B], bfc: B => Monad[C]) = {
-//      fa.FLATMAP(afb).FLATMAP(bfc) == fa.FLATMAP(a => afb(a).FLATMAP(b => bfc(b)))
-//    }
-  //
+
+    def flatMapAssociativity[A, B, C](fa: F[A], afb: A => F[B], bfc: B => F[C]) = {
+    FLATMAP(FLATMAP(fa)(afb))(bfc) == FLATMAP(FLATMAP(fa)(a => afb(a)))(b => bfc(b))
+    }
+
     def leftIdentity[A, B](a: A, f: A => F[B]):Boolean = {
       FLATMAP[A, B](PURE(a))(f) == f(a)
     }

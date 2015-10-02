@@ -1,28 +1,42 @@
 import scala.collection.mutable
 case class Graph(var value: Int) {
   var neighbours: List[Graph] = List.empty
-
   def addNeighbours(neighbour: Graph*) =
     neighbour.foreach(g => neighbours = neighbours :+ g)
 }
+
 val list = prepareListOfNodes()
-def BFS(list: List[Graph]): List[Graph] = {
-  val queue = mutable.Queue[Graph]()
-  list.foreach(_.value = Integer.MAX_VALUE)
-  list.head.value = 0
-  queue.enqueue(list.head)
+
+def BFS(list: List[Graph], i: Graph): List[Graph] = {
+  val queue = mutable.Queue[Graph]()        //create queue
+  list.foreach(_.value = Integer.MAX_VALUE) // set all nodes to MAX
+  i.value = 0                               //set i NODE to 0
+  queue.enqueue(i)                          //add i NODE to QUEUE
   while (queue.nonEmpty) {
     val j = queue.dequeue()
-    j.neighbours.foreach { n =>
-      if (n.value == Integer.MAX_VALUE) {
-        n.value = j.value + 1
-        queue.enqueue(n)
+    j.neighbours.foreach { n =>             // foreach neighbors of node on queue
+      if (n.value == Integer.MAX_VALUE) {   // if neighbor value = MAX
+        n.value = j.value + 1                 // set neighbor val to NODE + 1
+        queue.enqueue(n)                      // and add neighbor to queue
       }
     }
   }
   list
 }
-BFS(list)
+def computeDistanceDistribution(nodes: List[Graph]) = {
+  val map = collection.mutable.Map() ++ list.indices.map(_ -> 0).toMap
+  list.foreach{ g =>
+    BFS(list, g).foreach{graph =>
+      map(graph.value) = map(graph.value) + 1
+    }
+  }
+  map
+}
+
+println("BFS: ")
+BFS(list, list.head)
+println("computeDistanceDistribution: ")
+computeDistanceDistribution(list)
 
 
 def prepareListOfNodes(): List[Graph] = {
