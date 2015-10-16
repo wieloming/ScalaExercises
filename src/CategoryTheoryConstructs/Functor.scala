@@ -1,21 +1,28 @@
 package CategoryTheoryConstructs
 
-trait GenericFunctor[->>[_, _], ->>>[_, _], F[_]] {
-  def LIFT[A, B](f: A ->> B): F[A] ->>> F[B]
+trait GenericFunctor[->>[_, _], F[_]] {
+  def MAP[A, B](as: F[A])(f: A ->> B): F[B]
 }
 
-trait Functor[F[_]] extends GenericFunctor[Function, Function, F] {
-  def MAP[A, B](as: F[A])(f: A => B): F[B]
+trait Functor[F[_]] extends GenericFunctor[Function, F] {self =>
+  override def MAP[A, B](as: F[A])(f: A => B): F[B]
 
-  override def LIFT[A, B](f: A => B): F[A] => F[B] = fa => MAP(fa)(f)
+  //can be defined on functor
+  def LIFT[A, B](f: A => B): F[A] => F[B] = fa => MAP(fa)(f)
+  // AS and VOID are structure preserving List(1, 2).AS = List((), ())
   def AS[A, B](fa: F[A], b: => B): F[B] = MAP(fa)(_ => b)
   def VOID[A](fa: F[A]): F[Unit] = AS(fa, ())
+//TODO: implement X => F[G[X]]
+//  def COMPOSE[G[_]](implicit G: Functor[G]): Functor[{type L[a] = F[G[a]]}] =
+//    new Functor[{type L[a] = F[G[a]]}] {
+//      def MAP[A, B](fga: F[G[A]])(f: A => B): F[G[B]] = self.MAP(fga)(ga => G.MAP(ga)(a => f(a)))
+//    }
 }
 
 trait FunctorLaws {
   def identity[F[_], A](fa: F[A])(implicit F: Functor[F]) = F.MAP(fa)(a => a) == fa
   def composition[F[_], A, B, C](fa: F[A], f: A => B, g: B => C)(implicit F: Functor[F]) =
-    F.MAP(F.MAP(fa)(f))(g) == F.MAP(fa)(f andThen g)
+    F.MAP(F.MAP(fa)(f))(g) == F.MAP(fa)(f andThen g) // fa.map(A=>B).map(B=>C) == fa.map(A=>C)
 }
 
 object Functor {
@@ -30,9 +37,10 @@ object Functor {
   implicit def Function0Functor[X] = new Functor[Function0] {
     override def MAP[A, B](as: () => A)(f: A => B): () => B = () => f(as())
   }
-  //TODO: how to implement '?' type
-  //  implicit def Function0Functor[X] = new Functor[X=> ?] {
-  //    def MAP[A, B](fa: X => A)(f: A => B): X => B =
-  //      fa andThen f
-  //  }
+//  (partially aplying types in type constructor)
+//   functor mapping on function result(np. .map(_ + 1))
+    implicit def Function1Functor[X]: Functor[({type L[a] = (X) => a})#L] = new Functor[({type L[a] = (X) => a})#L] {
+      def MAP[A, B](fa: X => A)(f: A => B): X => B =
+        fa andThen f
+    }
 }

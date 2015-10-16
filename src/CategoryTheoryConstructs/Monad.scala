@@ -17,7 +17,7 @@ trait MonadLaws[F[_]] {
     FLATMAP(FLATMAP(fa)(afb))(bfc) == FLATMAP(FLATMAP(fa)(a => afb(a)))(b => bfc(b))
     }
 
-    def leftIdentity[A, B](a: A, f: A => F[B]):Boolean = {
+    def leftIdentity[A, B](a: A, f: A => F[B]): Boolean = {
       FLATMAP[A, B](PURE(a))(f) == f(a)
     }
 

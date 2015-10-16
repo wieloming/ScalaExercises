@@ -8,7 +8,6 @@ def getSubsequences(list: List[Int]): List[List[Int]] = {
   }
 }
 
-
 def checkIfIncreasing(list: List[Int]): Boolean = list match {
   case Nil => true
   case head :: Nil => true

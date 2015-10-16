@@ -1,11 +1,9 @@
-import scala.reflect.ClassTag
-
-def arrayFlatten[T: ClassTag](arrayToFlatten: Array[Array[T]]): Array[T] = {
-  var flattenArray: Array[T] = Array.empty
+def arrayFlatten[T](arrayToFlatten: List[List[T]]): List[T] = {
+  var flattenList: List[T] = List.empty
   for (array <- arrayToFlatten) {
-    flattenArray = flattenArray ++ array
+    flattenList = flattenList ++ array
   }
-  flattenArray
+  flattenList
 }
 
 def maybeFlatten[T](monad: Option[Option[T]]): Option[T] = {
@@ -14,5 +12,5 @@ def maybeFlatten[T](monad: Option[Option[T]]): Option[T] = {
     case None => None
   }
 }
-arrayFlatten[Int](Array(Array(1, 2, 4), Array(5, 6, 7))).foreach(println)
+arrayFlatten[Int](List(List(1, 2, 4), List(5, 6, 7))).foreach(println)
 maybeFlatten[Int](Some(Some(5))).foreach(println)

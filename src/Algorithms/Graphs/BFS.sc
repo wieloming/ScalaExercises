@@ -15,7 +15,7 @@ def BFS(list: List[Graph], i: Graph): List[Graph] = {
   while (queue.nonEmpty) {
     val j = queue.dequeue()
     j.neighbours.foreach { n =>             // foreach neighbors of node on queue
-      if (n.value == Integer.MAX_VALUE) {   // if neighbor value = MAX
+      if (n.value == Integer.MAX_VALUE) {    // if neighbor value = MAX
         n.value = j.value + 1                 // set neighbor val to NODE + 1
         queue.enqueue(n)                      // and add neighbor to queue
       }
