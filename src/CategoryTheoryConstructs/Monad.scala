@@ -1,5 +1,6 @@
 package CategoryTheoryConstructs
 
+//Maybe is a Functor, an Applicative, and a Monad
 trait Monad[F[_]] extends ApplicativeFunctor[F] {
   override def PURE[A](a: A): F[A]
   def FLATMAP[A, B](m: F[A])(f: A => F[B]): F[B]
@@ -10,16 +11,13 @@ trait Monad[F[_]] extends ApplicativeFunctor[F] {
 }
 
 trait MonadLaws[F[_]] {
-
   this: Monad[F] =>
 
-    def flatMapAssociativity[A, B, C](fa: F[A], afb: A => F[B], bfc: B => F[C]) = {
-    FLATMAP(FLATMAP(fa)(afb))(bfc) == FLATMAP(FLATMAP(fa)(a => afb(a)))(b => bfc(b))
-    }
+    def flatMapAssociativity[A, B, C](fa: F[A], afb: A => F[B], bfc: B => F[C]) =
+      FLATMAP(FLATMAP(fa)(afb))(bfc) == FLATMAP(FLATMAP(fa)(a => afb(a)))(b => bfc(b))
 
-    def leftIdentity[A, B](a: A, f: A => F[B]): Boolean = {
+    def leftIdentity[A, B](a: A, f: A => F[B]): Boolean =
       FLATMAP[A, B](PURE(a))(f) == f(a)
-    }
 
 //    def rightIdentity[F[_], A, B](fa: F[B]) = {
 //      fa.FLATMAP(a => PURE(a)) == fa

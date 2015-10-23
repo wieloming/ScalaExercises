@@ -1,11 +1,17 @@
 package CategoryTheoryConstructs
 
+//  like functors, but functions are now also wraped in boxes
 trait ApplicativeFunctor[F[_]] extends Functor[F] {
   def PURE[A](a: A): F[A]
   //similar to map in Functor(only ff is in monad)
   def APPLY[A, B](fa: F[A])(ff: F[A => B]): F[B]
 
+  //map defined in terms of pure and apply
   override def MAP[A, B](fa: F[A])(f: A => B): F[B] = APPLY(fa)(PURE(f))
+
+  def APPLY2[A, B, Z](fa: F[A], fb: F[B])(fabz: F[(A, B) => Z]) = {
+    APPLY(fa)(APPLY(fb)(MAP(fabz)(f => b => a => f(a, b))))
+  }
 
   def MAP2[A, B, Z](fa: F[A], fb: F[B])(f: (A, B) => Z): F[Z] = APPLY(fa)(MAP(fb)(b => f(_, b)))
 

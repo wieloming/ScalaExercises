@@ -1,8 +1,8 @@
 class PROMISE[T] {
   var callback = (result: T) => {}
 
-  def THEN(callback: (T) => Unit): Unit = {
-    this.callback = callback
+  def THEN(newCallback: (T) => Unit): Unit = {
+    this.callback = newCallback
   }
 }
 

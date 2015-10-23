@@ -27,7 +27,7 @@ class BankersQueue[+A] private(val frontSize: Int, val front: Stream[A], val rea
     check(addToRear(number))
   }
 
-  def dequeue = front match {
+  def dequeue: (A, BankersQueue[A]) = front match {
     case hd #:: tail => (hd, check(new BankersQueue(frontSize - 1, tail, rearSize, rear)))
     case _ => throw new NoSuchElementException("dequeue on empty queue")
   }
@@ -44,6 +44,5 @@ class BankersQueue[+A] private(val frontSize: Int, val front: Stream[A], val rea
 
 object BankersQueue {
   def empty[A] = new BankersQueue[A](0, Stream(), 0, Stream())
-
   def apply[A](xs: A*) = new BankersQueue(xs.length, xs.reverse.toStream, 0, Stream())
 }

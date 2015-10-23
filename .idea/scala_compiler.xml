@@ -7,6 +7,6 @@
     <parameters>
       <parameter value="-deprecation" />
     </parameters>
-    <profile name="SBT 1" modules="scalaexercises" />
+    <profile name="SBT 1" modules="project,scalaexercises" />
   </component>
 </project>

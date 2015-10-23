@@ -2,7 +2,7 @@ abstract class TRY
 case class SUCCESS(value: Any) extends TRY
 case class FAIL(value: Any) extends TRY
 
-def liftToTRY[T, F](fn: T=>F) = (value: T) => {
+def TRY[T, F](fn: T=>F) = (value: T) => {
   try{
     SUCCESS(fn(value))
   }catch{
@@ -25,8 +25,7 @@ def pipeTRY[T](values: Function[T, TRY]*): Function[T, TRY] = {
           case FAIL(x) => FAIL(x)
         }
       })
-    }
-    else {
+    } else {
       val newValues: Seq[Function[T, TRY]] = pipeToSeq(values(0), values(1)) ++ values.tail.tail
       pipeToSeq(newValues:_*)
     }
@@ -40,8 +39,8 @@ def enterOneOrGetException(value: Int):Int = value match {
 }
 def addOne(x: Int) = x + 1
 
-liftToTRY(addOne)(2)
-liftToTRY(enterOneOrGetException)(1)
-liftToTRY(enterOneOrGetException)(2)
+TRY(addOne)(2)
+TRY(enterOneOrGetException)(1)
+TRY(enterOneOrGetException)(2)
 
-println(pipeTRY(liftToTRY(enterOneOrGetException),liftToTRY(addOne))(1))
+println(pipeTRY(TRY(enterOneOrGetException),TRY(addOne))(1))

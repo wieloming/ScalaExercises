@@ -34,9 +34,7 @@ object Functor {
   implicit val OptionFunctor = new Functor[Option] {
     def MAP[A, B](fa: Option[A])(f: A => B): Option[B] = fa map f
   }
-  implicit def Function0Functor[X] = new Functor[Function0] {
-    override def MAP[A, B](as: () => A)(f: A => B): () => B = () => f(as())
-  }
+//   Functions are Functors too
 //  (partially aplying types in type constructor)
 //   functor mapping on function result(np. .map(_ + 1))
     implicit def Function1Functor[X]: Functor[({type L[a] = (X) => a})#L] = new Functor[({type L[a] = (X) => a})#L] {

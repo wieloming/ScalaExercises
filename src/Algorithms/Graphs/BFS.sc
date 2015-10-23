@@ -23,22 +23,20 @@ def BFS(list: List[Graph], i: Graph): List[Graph] = {
   }
   list
 }
-def computeDistanceDistribution(nodes: List[Graph]) = {
+def computeDistanceDistribution(list: List[Graph]) = {
   val map = collection.mutable.Map() ++ list.indices.map(_ -> 0).toMap
-  list.foreach{ g =>
-    BFS(list, g).foreach{graph =>
+//map =  Map(2 -> 0, 5 -> 0, 4 -> 0... )
+  list.foreach{ node =>
+    BFS(list, node).foreach{graph =>
       map(graph.value) = map(graph.value) + 1
     }
   }
   map
 }
-
 println("BFS: ")
 BFS(list, list.head)
 println("computeDistanceDistribution: ")
 computeDistanceDistribution(list)
-
-
 def prepareListOfNodes(): List[Graph] = {
   val g0 = Graph(0)
   val g1 = Graph(1)
