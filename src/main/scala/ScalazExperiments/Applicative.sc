@@ -8,8 +8,8 @@ def maybeComputeS (i: Int) = Option(Symbol (i.toString) )
 def maybeComputeN (i: Int) = Option(i)
 
 val maybeFoo = for {
-s <- maybeComputeS (whatever)
-n <- maybeComputeN (whatever)
+  s <- maybeComputeS (whatever)
+  n <- maybeComputeN (whatever)
 } yield Foo (s, n)
 
 

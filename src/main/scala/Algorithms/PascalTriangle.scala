@@ -1,4 +1,4 @@
-package SmallPrograms
+package Algorithms
 
 object PascalTriangle extends App {
 
