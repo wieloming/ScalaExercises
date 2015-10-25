@@ -7,8 +7,26 @@
 		revision="1.0"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20151025103631"/>
+		date="20151025111333"/>
 	<dependencies>
+		<module organisation="com.chuusai" name="shapeless_2.11">
+			<revision name="2.2.5" status="release" pubdate="20150722195017" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2992" time="0" location="C:\Users\Lukasz\.ivy2\cache\com.chuusai\shapeless_2.11\ivy-2.2.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.2.5/shapeless_2.11-2.2.5.pom"/>
+				<caller organisation="default" name="scalaexercises2$sources_javadoc_2.11" conf="compile, runtime" rev="2.2.5" rev-constraint-default="2.2.5" rev-constraint-dynamic="2.2.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="shapeless_2.11" type="jar" ext="jar" status="no" details="" size="2879840" time="0" location="C:\Users\Lukasz\.ivy2\cache\com.chuusai\shapeless_2.11\jars\shapeless_2.11-2.2.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.2.5/shapeless_2.11-2.2.5.jar"/>
+					</artifact>
+					<artifact name="shapeless_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3696164" time="0" location="C:\Users\Lukasz\.ivy2\cache\com.chuusai\shapeless_2.11\docs\shapeless_2.11-2.2.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.2.5/shapeless_2.11-2.2.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="shapeless_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="208970" time="0" location="C:\Users\Lukasz\.ivy2\cache\com.chuusai\shapeless_2.11\srcs\shapeless_2.11-2.2.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/2.2.5/shapeless_2.11-2.2.5-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.scalaz" name="scalaz-core_2.11">
 			<revision name="7.1.4" status="release" pubdate="20150918175902" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>

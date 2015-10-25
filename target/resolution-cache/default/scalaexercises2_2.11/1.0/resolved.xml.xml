@@ -4,7 +4,7 @@
 		module="scalaexercises2_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151025103344"
+		publication="20151025111328"
 	>
 		<description>
 		ScalaExercises2
@@ -33,5 +33,6 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalaz" name="scalaz-core_2.11" rev="7.1.4" conf="compile->default(compile)"/>
+		<dependency org="com.chuusai" name="shapeless_2.11" rev="2.2.5" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
