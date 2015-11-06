@@ -1,5 +1,6 @@
 package CategoryTheoryConstructs
 
+//required for fold
 trait Semigroup[A]{
   def combine(x: A, y: A): A
 }

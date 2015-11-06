@@ -35,7 +35,7 @@ object Functor {
     def MAP[A, B](fa: Option[A])(f: A => B): Option[B] = fa map f
   }
 //   Functions are Functors too
-//  (partially aplying types in type constructor)
+//  (partially applying types in type constructor)
 //   functor mapping on function result(np. .map(_ + 1))
 //   x => ?
     implicit def Function1Functor[X]: Functor[({type L[a] = (X) => a})#L] = new Functor[({type L[a] = (X) => a})#L] {

@@ -12,8 +12,8 @@ object EncryptDecrypt extends App {
   }
 
   val key = 1 to 26
-  val keyMap = ('a' to 'z' zip key).toMap
-  val reverseKeyMap: Map[Int, Char] = keyMap map (_.swap)
+  val lettersToNumbers = ('a' to 'z' zip key).toMap
+  val numbersToLetters: Map[Int, Char] = lettersToNumbers map (_.swap)
 
   def encrypt(string: String): String = {
     string
@@ -22,10 +22,10 @@ object EncryptDecrypt extends App {
       word
         .toLowerCase
         .replaceAll("[^\\p{L}\\p{Nd}]+", "")
-        .map(keyMap)
+        .map(lettersToNumbers)
         .zip(key)
         .map({ case (value, keyVal) => ((value + keyVal) % 26) + 1 })
-        .map(reverseKeyMap)
+        .map(numbersToLetters)
         .mkString
     }
       .mkString(" ")
@@ -34,14 +34,14 @@ object EncryptDecrypt extends App {
   def decrypt(string: String): String = {
     string.split(" ").map { word =>
       word
-        .map(keyMap)
+        .map(lettersToNumbers)
         .zip(key)
         .map({ case (value, keyVal) =>
         val diff = value - keyVal - 1
         if (diff < 1) 26 + diff
         else diff
       })
-        .map(reverseKeyMap)
+        .map(numbersToLetters)
         .mkString
     }
       .mkString(" ")

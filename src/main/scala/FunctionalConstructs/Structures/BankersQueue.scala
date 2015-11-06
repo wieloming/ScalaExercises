@@ -12,7 +12,7 @@ class BankersQueue[+A] private(val frontSize: Int, val front: Stream[A], val rea
   }
 
   def tail: BankersQueue[A] = front match {
-    case _ #:: tail => check(new BankersQueue(frontSize - 1, tail, rearSize, rear))
+    case _ #:: tail => moveAllFrontToRearIfNecessary(new BankersQueue(frontSize - 1, tail, rearSize, rear))
     case _ => throw new NoSuchElementException("queue empty")
   }
 
@@ -24,15 +24,15 @@ class BankersQueue[+A] private(val frontSize: Int, val front: Stream[A], val rea
 
   def enqueue[B >: A](number: B) = {
     def addToRear(number: B): BankersQueue[B] = new BankersQueue(frontSize, front, rearSize + 1, number #:: (rear: Stream[B]))
-    check(addToRear(number))
+    moveAllFrontToRearIfNecessary(addToRear(number))
   }
 
   def dequeue: (A, BankersQueue[A]) = front match {
-    case hd #:: tail => (hd, check(new BankersQueue(frontSize - 1, tail, rearSize, rear)))
+    case hd #:: tail => (hd, moveAllFrontToRearIfNecessary(new BankersQueue(frontSize - 1, tail, rearSize, rear)))
     case _ => throw new NoSuchElementException("dequeue on empty queue")
   }
 
-  private def check[B](queue: BankersQueue[B]) = {
+  private def moveAllFrontToRearIfNecessary[B](queue: BankersQueue[B]) = {
     def moveAllRearToFront(queue: BankersQueue[B]): BankersQueue[B] = {
       new BankersQueue(queue.frontSize + queue.rearSize, queue.front ++ queue.rear.reverse, 0, Stream())
     }

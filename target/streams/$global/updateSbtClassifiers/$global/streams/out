@@ -703,9 +703,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-agent;0.13.8!test-agent.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
-[debug] :: resolution report :: resolve 2177ms :: artifacts dl 71ms
+[debug] :: resolution report :: resolve 4910ms :: artifacts dl 558ms
 [debug] 	report for default#scalaexercises2$sbt_2.11;1.0 default produced in C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\target\resolution-cache\reports\default-scalaexercises2$sbt_2.11-default.xml
-[debug] 	resolve done (2177ms resolve - 71ms download)
+[debug] 	resolve done (4910ms resolve - 558ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#scalaexercises2$sources_2.11;1.0
 [debug] 	confs: [default]
@@ -1069,6 +1069,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_8_2;0.13.8!precompiled-2_8_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_2;0.13.8!precompiled-2_9_2.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#precompiled-2_9_3;0.13.8!precompiled-2_9_3.jar(src)
-[debug] :: resolution report :: resolve 343ms :: artifacts dl 57ms
+[debug] :: resolution report :: resolve 187ms :: artifacts dl 39ms
 [debug] 	report for default#scalaexercises2$sources_2.11;1.0 default produced in C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\target\resolution-cache\reports\default-scalaexercises2$sources_2.11-default.xml
-[debug] 	resolve done (343ms resolve - 57ms download)
+[debug] 	resolve done (187ms resolve - 39ms download)

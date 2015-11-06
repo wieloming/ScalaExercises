@@ -1,4 +1,4 @@
-abstract class OPTION
+sealed trait OPTION
 
 case class SOME(value: Any) extends OPTION
 case class NONE(value: Any = null) extends OPTION

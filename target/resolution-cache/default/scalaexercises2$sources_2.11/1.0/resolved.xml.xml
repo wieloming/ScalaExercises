@@ -4,7 +4,7 @@
 		module="scalaexercises2$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151025111332"
+		publication="20151106145240"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

@@ -1,7 +1,8 @@
 // n^3
 implicit class NewString(string: String) {
   def getAllSubstrings: List[String] = {
-    string.inits
+    string
+      .inits
       .flatMap(_.tails)
       .toList
       .filterNot(_.isEmpty)
@@ -14,10 +15,10 @@ implicit class NewString(string: String) {
     case head :: tail => tail.init.mkString.isPalindrome
   }
 }
-
 def findLongestPalindrome(string: String) = {
   string.getAllSubstrings.filter(_.isPalindrome).sortBy(_.length).last
 }
+
 // n^2
 def findLongestPalindrome2(string: String) = {
   var longestStart = 0
