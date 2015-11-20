@@ -7,7 +7,7 @@ object FutureSequence extends App {
 
   def futureSequence[A](sf: Seq[Future[A]]): Future[Seq[A]] = sf match {
     case Nil => Future(Nil)
-    case head :: tail =>
+    case (head:Future[A]) :: tail =>
       futureSequence(tail)
         .flatMap(seqTail => head.map(Seq(_) ++ seqTail))
   }
