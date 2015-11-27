@@ -4,7 +4,7 @@ def getSubsequences(list: List[Int]): List[List[Int]] = {
     case head :: Nil => List(list)
     case head :: tail =>
       val allForPrevious = getSubsequences(tail)
-      allForPrevious ++ (List(head) :: allForPrevious.map(head::_))
+      List(head) :: allForPrevious ++ allForPrevious.map(head::_)
   }
 }
 

@@ -1,7 +1,8 @@
+
+
 def pipe[T](values: (T => T)*): T => T = {
-    if (values.size == 1) {
-      values.head
-    } else if (values.size == 2) {
+    if (values.size == 1) values.head
+    else if (values.size == 2) {
       val f1: T => T = values.head
       val f2: T => T = values.tail.head
       (v: T) => f2(f1(v))

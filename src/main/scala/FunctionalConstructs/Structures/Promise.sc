@@ -26,6 +26,6 @@ def getTest: PROMISE[String] = {
 
 getTest.THEN(
   (result) => {
-    println("Dzia³a: " + result)
+    println("DziaÅ‚a: " + result)
   }
 )

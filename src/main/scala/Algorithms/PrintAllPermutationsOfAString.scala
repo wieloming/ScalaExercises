@@ -8,7 +8,7 @@ class PrintAllPermutationsOfAString {
         println(result)
       } else {
         letters.foreach { letter =>
-          val filteredLetters = letters.filterNot(_.equals(letter))
+          val filteredLetters = letters.filterNot(_ == letter)
           count(filteredLetters, result + letter)
         }
       }

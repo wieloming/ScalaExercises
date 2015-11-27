@@ -1,6 +1,6 @@
 package Algorithms
 
-class CheckIdStringIsRotatedPalindrome {
+class CheckIfStringIsRotatedPalindrome {
 
   def isRotatedPalindrome(string: String): Boolean = {
 

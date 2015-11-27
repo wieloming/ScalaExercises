@@ -1,25 +1,25 @@
-case object Empty extends Stream[Nothing]
+case object Empty extends STREAM[Nothing]
 
-case class Cons[+A](h: () => A, t: () => Stream[A]) extends Stream[A]
+case class Cons[+A](h: () => A, t: () => STREAM[A]) extends STREAM[A]
 
-object Stream {
-  def cons[A](hd: => A, tl: => Stream[A]): Stream[A] = {
+object STREAM {
+  def cons[A](hd: => A, tl: => STREAM[A]): STREAM[A] = {
     lazy val head = hd
     lazy val tail = tl
     Cons(() => head, () => tail)
   }
 
-  def apply[A](as: A*): Stream[A] = {
+  def apply[A](as: A*): STREAM[A] = {
     if (as.isEmpty) Empty
     else cons(as.head, apply(as.tail: _*))
   }
 }
 
-trait Stream[+A] {
+trait STREAM[+A] {
   def toList: List[A] = this match {
     case Empty => Nil
     case Cons(h, t) => h() :: t().toList
   }
 }
-Stream(1, 2, 3, 4)
-Stream(1, 2, 3, 4).toList
+STREAM(1, 2, 3, 4)
+STREAM(1, 2, 3, 4).toList

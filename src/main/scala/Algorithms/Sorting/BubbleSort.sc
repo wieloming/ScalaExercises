@@ -9,20 +9,17 @@ def sort(array: Array[Int]): Array[Int] = {
   array
 }
 
-def sortRecursive(list: List[Int]): List[Int] = {
-  if (list != Nil && list.tail != Nil) {
-    if (list.head > list.tail.head) {
-      sortRecursive(List(list.tail.head, list.head) ++ list.tail.tail)
-    } else {
-      val tailSorted = sortRecursive(list.tail)
-      if (list.head > tailSorted.head)
-        sortRecursive(List(tailSorted.head, list.head) ++ tailSorted.tail)
-      else
-        List(list.head) ::: tailSorted
-    }
-  } else {
-    list
-  }
+def sortRecursive(list: List[Int]): List[Int] = list match {
+  case Nil => Nil
+  case head :: Nil => List(head)
+  case head :: second :: tail if head > second =>
+    sortRecursive(List(second, head) ++ tail)
+  case head :: tail =>
+    val tailSorted = sortRecursive(tail)
+    if (head > tailSorted.head)
+      sortRecursive(List(tailSorted.head, head) ++ tailSorted.tail)
+    else
+      List(head) ::: tailSorted
 }
 
 sort(Array(7, 6, 4, 5, 3, 1, 2))

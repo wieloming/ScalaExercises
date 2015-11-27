@@ -17,3 +17,4 @@ object MakeBigger extends Poly1 {
 
 MakeBigger(10)
 MakeBigger("dupa")
+MakeBigger(10 :: "dupa" :: HNil)

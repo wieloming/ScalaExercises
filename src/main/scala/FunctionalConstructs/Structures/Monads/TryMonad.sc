@@ -12,9 +12,7 @@ def TRY[T, F](fn: T=>F) = (value: T) => {
 
 def pipeTRY[T](values: Function[T, TRY]*): Function[T, TRY] = {
   def pipeToSeq(values: Function[T, TRY]*): Seq[Function[T, TRY]] = {
-    if (values.size == 1) {
-      Seq(values(0))
-    }
+    if (values.size == 1) Seq(values(0))
     else if (values.size == 2) {
       val f1: Function[T, TRY] = values(0)
       val f2: Function[T, TRY] = values(1)
