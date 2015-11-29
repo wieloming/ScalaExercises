@@ -1,5 +1,6 @@
 def sort(array: Array[Int]): Array[Int] = {
-  for (i <- 0 until array.length - 1; j <- 0 until array.length - 1 - i) {
+  for (i <- 0 until array.length - 1;
+       j <- 0 until array.length - 1 - i) {
     if (array(j) > array(j + 1)) {
       val tmp = array(j)
       array(j) = array(j + 1)

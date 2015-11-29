@@ -1,12 +1,4 @@
 type NUMBER = (Any => Any, Any) => Any
-object INTEGER{
-  def increment = (x: Any) => x.asInstanceOf[Int] + 1
-  val init = 0
-}
-object STRING{
-  def increment = (x: Any) => x.asInstanceOf[String] + "o"
-  val init = ""
-}
 
 def ZERO(f: Any => Any, x: Any) = x
 def ONE(f: Any => Any, x: Any) = f(x)
@@ -20,10 +12,10 @@ def MUL(a: NUMBER, b: NUMBER)(increment: Any => Any, init: Any): Any = {
   a(b(increment, _), init)
 }
 
-ADD(ONE, TWO)(INTEGER.increment, INTEGER.init)
-MUL(TWO, THREE)(INTEGER.increment, 0)
+ADD(ONE, TWO)((x: Any) => x.asInstanceOf[Int] + 1, 0)
+MUL(TWO, THREE)((x: Any) => x.asInstanceOf[Int] + 1, 0)
 
-ADD(ONE, MUL(TWO, THREE))(INTEGER.increment, INTEGER.init)
-ADD(ONE, MUL(TWO, THREE))(STRING.increment, STRING.init)
+ADD(ONE, MUL(TWO, THREE))((x: Any) => x.asInstanceOf[Int] + 1, 0)
+ADD(ONE, MUL(TWO, THREE))((x: Any) => x.asInstanceOf[String] + "o", "")
 
 

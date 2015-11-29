@@ -14,7 +14,6 @@ trait Parser[A] {
 implicit val stringParser: Parser[String] = new Parser[String] {
   def apply(s: String): Option[String] = Some(s)
 }
-
 implicit val intParser: Parser[Int] = new Parser[Int] {
   def apply(s: String): Option[Int] = Try(s.toInt).toOption
 }

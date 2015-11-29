@@ -22,5 +22,5 @@ val maybeFoo2 = (maybeComputeS(whatever) |@| maybeComputeN(whatever) ) (Foo)
 (List("ha", "heh", "hmm") |@| List("?", "!", "."))(_ + _)
 
 //////////////////////////////
-^(List(1, 2, 3), List(10, 100, 100))(_ * _)
+(List(1, 2, 3) |@| List(10, 100, 100))(_ * _)
 (3.some |@| 5.some)(_ + _)
