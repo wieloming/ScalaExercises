@@ -1,3 +1,7 @@
+// val/def x == type T
+// def f(x) == type F[T]
+// x: T == x <: T
+
 trait BOOL {
   type &&[B <: BOOL] <: BOOL          //def(b: Bool): Bool
   type ||[B <: BOOL] <: BOOL          //def(b: Bool): Bool
