@@ -2,10 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc366b05-4e4b-4166-bf0b-4771dcb40964" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Memoization.sc" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Integers.sc" afterPath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/ChurchNumerals.sc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/Types/Enums.sc" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/CheckIfBinaryTreeIsBST.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/CheckIfStringIsRotatedPalindrome.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/ConvertDoubleToRational.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/CountingChange.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/DijkstraTwoStacks.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/Fibbonaccii.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/FindAllElementsOfLevelInBinaryTree.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/FindClosestNumberInBinarySearchTree.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/FindFirstIndexOfNumberInSortedArrayWithDuplicates.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/FindLongestPalindromeInString.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/FindTheBalancePointInArray.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/GCD.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/Graphs/BFS.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/Graphs/ConvexHull.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/HanoiTower.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/LongestIncreasingSubsequence.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/ParenthesesBalanced.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/PascalTriangle.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPairsFromSortedArrayThatSumsToGivenNumber.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPermutationsOfAString.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/SearchValueIn2DSortedArray.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/BubbleSort.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/QuickSort.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/Algorithms/StairClimbingProblem.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/Enums.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Either.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/SmallPrograms/EncryptDecrypt.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/SmallPrograms/GeneticAlgorithms/Experiments.sc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/SmallPrograms/HigherLower.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/scala/SmallPrograms/exercises.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/AbstractTypes.sc" afterPath="$PROJECT_DIR$/src/main/scala/Types/AbstractTypes.sc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/PhantomTypes.sc" afterPath="$PROJECT_DIR$/src/main/scala/Types/PhantomTypes.sc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/RefinedTypes.sc" afterPath="$PROJECT_DIR$/src/main/scala/Types/RefinedTypes.sc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/StructuralTypes.sc" afterPath="$PROJECT_DIR$/src/main/scala/Types/StructuralTypes.sc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Bool.sc" afterPath="$PROJECT_DIR$/src/main/scala/Types/TypeLevel/Bool.sc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Multiplication.sc" afterPath="$PROJECT_DIR$/src/main/scala/Types/TypeLevel/Multiplication.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbt.xml" afterPath="$PROJECT_DIR$/.idea/sbt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Bool.sc" afterPath="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Bool.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monoid.scala" afterPath="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monoid.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Pipe.sc" afterPath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Pipe.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Map.sc" afterPath="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Map.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/List.sc" afterPath="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/List.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/Stream.sc" afterPath="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/Stream.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Lens.sc" afterPath="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Lens.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Other.sc" afterPath="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Other.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/ShapelessExperients/Sized.sc" afterPath="$PROJECT_DIR$/src/main/scala/ShapelessExperients/Sized.sc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sbt_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sbt_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sbt_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sbt_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_javadoc_2.11/1.0/resolved.xml.properties" afterPath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_javadoc_2.11/1.0/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_javadoc_2.11/1.0/resolved.xml.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/default/scalaexercises2$sources_javadoc_2.11/1.0/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sbt_2.11-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sbt_2.11-default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_2.11-default.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_2.11-default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-compile-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-compile.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-docs.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-optional.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-plugin.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-pom.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-provided.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-runtime-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-runtime.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-scala-tool.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-sources.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-test-internal.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-test.xml" afterPath="$PROJECT_DIR$/target/resolution-cache/reports/default-scalaexercises2$sources_javadoc_2.11-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateClassifiers/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" afterPath="$PROJECT_DIR$/target/streams/$global/updateSbtClassifiers/$global/streams/out" />
     </list>
     <ignored path="ScalaExercises2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,6 +90,10 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsData">
@@ -55,11 +126,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Multiplication.sc" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Multiplication.sc">
+      <file leaf-file-name="Multiplication.sc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Types/TypeLevel/Multiplication.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39901477">
-              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bool.sc" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/Types/TypeLevel/Bool.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35912937">
+              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -85,24 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/ShapelessExperients/Generics.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/CountingChange.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Semigroup.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Functor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/SmallPrograms/EncryptDecrypt.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/ApplicativeFunctor.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Monoids.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monoid.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Category.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Functor.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/DijkstraTwoStacks.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/FindLongestPalindromeInString.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPairsFromSortedArrayThatSumsToGivenNumber.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/BankersQueue.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/workshit.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/TaggedClass.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Monoid.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Monad.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Monads/OptionMonad.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/FutureSequence.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ShapelessExperients/HList.sc" />
@@ -112,30 +175,48 @@
         <option value="$PROJECT_DIR$/src/main/scala/Algorithms/CheckIfStringIsRotatedPalindrome.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/Algorithms/LongestIncreasingSubsequence.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPermutationsOfAString.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/StairClimbingProblem.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Monads/TryMonad.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Promise.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Pipe.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Collections/Experiments.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/List.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/Stream.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Enums.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Either.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Zipper.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Other.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Lens.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/Algorithms/ConvexHull.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/Algorithms/Graphs/ConvexHull.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ShapelessExperients/PolymorphicFunction.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ShapelessExperients/GenericDerivation.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Applicative.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/QuickSort.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/BubbleSort.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/PhantomTypes.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/ShapelessExperients/Sized.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Bool.sc" />
-        <option value="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Multiplication.sc" />
         <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Integers.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Multiplication.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/codility.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/c2.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/TODO/Codility-01.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/BubbleSort.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/TODO/Codility-02.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/Codility/Codility-01.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/ParenthesesBalanced.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPairsFromSortedArrayThatSumsToGivenNumber.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/AdventOfCode.sc" />
+        <option value="$PROJECT_DIR$/../AdventOfCode/src/AdventOfCode.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/ChurchNumerals.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Pipe.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/PhantomTypes.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Pac.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/SmallPrograms/Pac.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Enums.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Either.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/FindAllElementsOfLevelInBinaryTree.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/Algorithms/StairClimbingProblem.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monoid.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Map.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/List.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/Stream.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Lens.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/ShapelessExperients/Sized.sc" />
+        <option value="$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.1.4-sources.jar!/scalaz/Memo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ScalazExperiments/Other.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/TypeSafeBuilderPattern.sc" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -150,7 +231,7 @@
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -199,7 +280,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,6 +351,10 @@
               <option name="myItemId" value="scala" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -294,12 +378,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FunctionalConstructs" />
+              <option name="myItemId" value="Types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeLevel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaExercises2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScalaExercises2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
@@ -324,10 +435,15 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\ScalazExperiments" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SmallPrograms" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Types\TypeLevel" />
+      <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Types" />
+      <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Algorithms\Codility" />
+      <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Algorithms\TODO" />
       <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Algorithms\Graphs" />
-      <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Algorithms\Sorting" />
-      <recent name="C:\Users\Lukasz\Desktop\JaVa\Scala\ScalaExercises2\src\main\scala\Algorithms" />
     </key>
   </component>
   <component name="RunManager" selected="Application.EncryptDecrypt">
@@ -338,10 +454,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="SmallPrograms.EncryptDecrypt" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="MAIN_CLASS_NAME" value="SmallPrograms.Pac" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -649,7 +765,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1447511240014" />
+    <option name="lastUpdateTimestamp" value="1454078098757" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -704,20 +820,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26152197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25777063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -728,11 +844,38 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26152197" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -746,7 +889,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -766,99 +911,157 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/List.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8004926">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/Stream.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Collections/Experiments.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36576355">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/While.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16625616">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Trampoline.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09975369">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Pipe.sc">
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/HanoiTower.sc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/If.sc">
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/LongestIncreasingSubsequence.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03325123">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="0.23190184">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/FutureSequence.scala">
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/ParenthesesBalanced.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1264637">
-          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="0.2981595">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/PascalTriangle.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06513872">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/PrintAllPairsFromSortedArrayThatSumsToGivenNumber.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36441717">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/PrintAllPermutationsOfAString.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0630105">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/SearchValueIn2DSortedArray.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18903151">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Category.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22053675">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Semigroup.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22053675">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monoid.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9369895">
+          <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Functor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9369895">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/ApplicativeFunctor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9369895">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monad.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9369895">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/ChurchNumerals.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06625767">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Flatten.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16625616">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+        <state vertical-scroll-proportion="0.099386506">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Promise.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/FutureSequence.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.432266">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.126021">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Monads/OptionMonad.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/If.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39901477">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Map.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Pipe.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03325123">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.13251534">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/RecursiveCollectionFunctions.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.099386506">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Trampoline.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/While.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/ImmutableList.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6294479">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -866,247 +1069,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/ImmutableList.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Map.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16625616">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Category.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Semigroup.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15807962">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monoid.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6206089">
-          <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Functor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3676815">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/ApplicativeFunctor.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031615924">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/CategoryTheoryConstructs/Monad.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81030446">
-          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/QuickSort.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26600984">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/Sorting/BubbleSort.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06650246">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/CheckIfBinaryTreeIsBST.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/CheckIfStringIsRotatedPalindrome.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/ConvertDoubleToRational.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/CountingChange.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/DijkstraTwoStacks.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/Fibbonaccii.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/FindAllElementsOfLevelInBinaryTree.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1264637">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/FindClosestNumberInBinarySearchTree.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58899295">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/FindFirstIndexOfNumberInSortedArrayWithDuplicates.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/FindLongestPalindromeInString.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.432266">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/FindTheBalancePointInArray.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/GCD.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/HanoiTower.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/ParenthesesBalanced.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/LongestIncreasingSubsequence.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/PascalTriangle.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPairsFromSortedArrayThatSumsToGivenNumber.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09975369">
-          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/StairClimbingProblem.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39901477">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/SearchValueIn2DSortedArray.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/Algorithms/PrintAllPermutationsOfAString.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06323185">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/PhantomTypes.sc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36576355">
+        <state vertical-scroll-proportion="0.36441717">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/Structures/Promise.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26503068">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Collections/Experiments.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/List.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23190184">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Implementations/Stream.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06625767">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Traits/CakePattern.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34969324">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalaStructures/Traits/TypeClasses.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalazExperiments/Applicative.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13251534">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalazExperiments/KleisliComposition.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06625767">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalazExperiments/Lens.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46380368">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalazExperiments/Functor.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ShapelessExperients/Sized.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16564417">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -1114,54 +1160,121 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/com.chuusai/shapeless_2.11/srcs/shapeless_2.11-2.2.5-sources.jar!/shapeless/sized.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ShapelessExperients/Generics.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325527">
-          <caret line="182" column="7" selection-start-line="182" selection-start-column="7" selection-end-line="182" selection-end-column="7" />
-          <folding />
+        <state vertical-scroll-proportion="0.13251534">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/ShapelessExperients/Sized.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ShapelessExperients/GenericDerivation.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06650246">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
+        <state vertical-scroll-proportion="0.099386506">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Bool.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ShapelessExperients/PolymorphicFunction.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03325123">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.16564417">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/ChurchNumerals.sc">
+    <entry file="file://$PROJECT_DIR$/../ScalaAlgorithms/src/Algorithms/StairClimbingProblem.sc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/FunctionalConstructs/RecursiveCollectionFunctions.sc">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalaz/scalaz-core_2.11/srcs/scalaz-core_2.11-7.1.4-sources.jar!/scalaz/Memo.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09975369">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.28321677">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ScalazExperiments/Other.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5217391">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TypeLevelProgramming/Multiplication.sc">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/TypeSafeBuilderPattern.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39901477">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.9818621">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/AbstractTypes.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/Enums.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/PhantomTypes.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/RefinedTypes.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/StructuralTypes.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/TypeLevel/Multiplication.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18642117">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/Types/TypeLevel/Bool.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35912937">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1207,7 +1320,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

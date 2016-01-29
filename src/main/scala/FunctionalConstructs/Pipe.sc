@@ -1,15 +1,7 @@
-
-
-def pipe[T](values: (T => T)*): T => T = {
-    if (values.size == 1) values.head
-    else if (values.size == 2) {
-      val f1: T => T = values.head
-      val f2: T => T = values.tail.head
-      (v: T) => f2(f1(v))
-    } else {
-      val newValues: Seq[T => T] = Seq(pipe(values.head, values.tail.head)) ++ values.tail.tail
-      pipe(newValues: _*)
-    }
+def pipe[T](values: (T => T)*): T => T = values.toList match {
+  case first :: Nil => values.head
+  case first :: second :: Nil => (v: T) => second(first(v))
+  case first :: second :: tail => pipe(Seq(pipe(first, second)) ++ tail: _*)
 }
 
 def addOne(): Int => Int = (num: Int) => num + 1

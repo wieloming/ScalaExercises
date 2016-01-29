@@ -1,30 +1,28 @@
-sealed trait List[+A]
+sealed trait LIST[+A]
+case object NIL extends LIST[Nothing]
+case class CONS[+A](head: A, tail: LIST[A]) extends LIST[A]
 
-case object Nil extends List[Nothing]
+val ex1: LIST[Double] = NIL
+val ex2: LIST[Int] = CONS(1, NIL)
 
-case class Cons[+A](head: A, tail: List[A]) extends List[A]
-
-val ex1: List[Double] = Nil
-val ex2: List[Int] = Cons(1, Nil)
-
-object List {
-  def apply[A](as: A*): List[A] = {
-    if (as.isEmpty) Nil
-    else Cons(as.head, apply(as.tail: _*))
+object LIST {
+  def apply[A](as: A*): LIST[A] = {
+    if (as.isEmpty) NIL
+    else CONS(as.head, apply(as.tail: _*))
   }
 }
 
-def tail[A](ds: List[A]) = ds match {
-  case Nil => throw new Exception
-  case Cons(_, t) => t
+def tail[A](ds: LIST[A]) = ds match {
+  case NIL => throw new Exception
+  case CONS(_, t) => t
 }
-def init[A](ls: List[A]): List[A] = ls match {
-  case Nil => throw new Exception
-  case Cons(h, Nil) => Nil
-  case Cons(h, t) => Cons(h, init(t))
+def init[A](ls: LIST[A]): LIST[A] = ls match {
+  case NIL => throw new Exception
+  case CONS(h, NIL) => NIL
+  case CONS(h, t) => CONS(h, init(t))
 }
 
-val a = Cons(1, Cons(2, Cons(3, Cons(4, Nil))))
-val b = List(1, 2, 3, 4)
+val a = CONS(1, CONS(2, CONS(3, CONS(4, NIL))))
+val b = LIST(1, 2, 3, 4)
 tail(b)
 init(b)

@@ -1,12 +1,12 @@
 case object Empty extends STREAM[Nothing]
 
-case class Cons[+A](h: () => A, t: () => STREAM[A]) extends STREAM[A]
+case class CONS[+A](h: () => A, t: () => STREAM[A]) extends STREAM[A]
 
 object STREAM {
   def cons[A](hd: => A, tl: => STREAM[A]): STREAM[A] = {
     lazy val head = hd
     lazy val tail = tl
-    Cons(() => head, () => tail)
+    CONS(() => head, () => tail)
   }
 
   def apply[A](as: A*): STREAM[A] = {
@@ -18,7 +18,7 @@ object STREAM {
 trait STREAM[+A] {
   def toList: List[A] = this match {
     case Empty => Nil
-    case Cons(h, t) => h() :: t().toList
+    case CONS(h, t) => h() :: t().toList
   }
 }
 STREAM(1, 2, 3, 4)

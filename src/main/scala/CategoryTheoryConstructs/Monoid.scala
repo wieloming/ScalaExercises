@@ -3,7 +3,6 @@ package CategoryTheoryConstructs
 //for filter on futures
 trait Monoid[T] extends Semigroup[T] {
   override def combine(a1: T, a2: T): T
-
   def id: T
 }
 

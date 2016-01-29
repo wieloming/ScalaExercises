@@ -1,5 +1,4 @@
 import scalaz._
-import Scalaz._
 
 //Scala version:
 case class Point(x: Int, y: Int)
