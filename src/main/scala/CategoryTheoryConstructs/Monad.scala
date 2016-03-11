@@ -7,7 +7,7 @@ trait Monad[F[_]] extends ApplicativeFunctor[F] {
 
   override def MAP[A, B](fa: F[A])(f: A => B): F[B] = FLATMAP(fa)(a => PURE(f(a)))
   override def APPLY[A, B](fa: F[A])(ff: F[A => B]): F[B] = FLATMAP(ff)((f: A => B) => MAP(fa)(f))
-  def FLATTEN[A](ffa: F[F[A]]): F[A] = FLATMAP(ffa)(fa => fa)
+  def FLATTEN[A](ffa: F[F[A]]): F[A] = FLATMAP(ffa)(identity)
 }
 
 trait MonadLaws[F[_]] {

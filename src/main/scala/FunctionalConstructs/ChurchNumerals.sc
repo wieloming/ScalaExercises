@@ -1,22 +1,21 @@
 //Church numerals
-type NUMBER = (Any => Any, Any) => Any
+type NUMBER[T] = (T => T, T) => T
 
-def ZERO(f: Any => Any, x: Any) = x
-def ONE(f: Any => Any, x: Any) = f(x)
-def TWO(f: Any => Any, x: Any) = f(f(x))
-def THREE(f: Any => Any, x: Any) = f(f(f(x)))
+def ZERO[T](f: T => T, x: T) = x
+def ONE[T](f: T => T, x: T) = f(x)
+def TWO[T](f: T => T, x: T) = f(f(x))
+def THREE[T](f: T => T, x: T) = f(f(f(x)))
 
-def ADD(a: NUMBER, b: NUMBER)(increment: Any => Any, init: Any): Any = {
+def ADD[T](a: NUMBER[T], b: NUMBER[T])(increment: T => T, init: T): T = {
   a(increment, b(increment, init))
 }
-def MUL(a: NUMBER, b: NUMBER)(increment: Any => Any, init: Any): Any = {
+def MUL[T](a: NUMBER[T], b: NUMBER[T])(increment: T => T, init: T): T = {
   a(b(increment, _), init)
 }
 
-ADD(ONE, TWO)((x: Any) => x.asInstanceOf[Int] + 1, 0)
-MUL(TWO, THREE)((x: Any) => x.asInstanceOf[Int] + 1, 0)
+ADD[Int](ONE, TWO)((x) => x + 1, 0)
+MUL[Int](TWO, THREE)((x) => x + 1, 0)
 
-ADD(ONE, MUL(TWO, THREE))((x: Any) => x.asInstanceOf[Int] + 1, 0)
-ADD(ONE, MUL(TWO, THREE))((x: Any) => x.asInstanceOf[String] + "o", "")
-
+ADD[Int](ONE, MUL(TWO, THREE))((x) => x + 1, 0)
+ADD[String](ONE, MUL(TWO, THREE))((x) => x + "o", "")
 

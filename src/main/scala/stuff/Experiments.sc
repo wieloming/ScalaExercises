@@ -4,9 +4,9 @@ object s_+: {
   }
 }
 
-def areStringsEqual(x: String, y: String): Boolean = (x, y) match {
+def areStringsEqual(a: String, b: String): Boolean = (a, b) match {
   case ("", "") => true
-  case (xh s_+: xt, yh s_+: yt) => x.head == y.head && areStringsEqual(x.tail, y.tail)
+  case (x s_+: xs, y s_+: ys) => x == y && areStringsEqual(xs, ys)
   case (_, _) => false
 }
 

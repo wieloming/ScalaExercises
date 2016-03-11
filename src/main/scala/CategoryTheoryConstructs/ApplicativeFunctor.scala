@@ -16,7 +16,7 @@ trait ApplicativeFunctor[F[_]] extends Functor[F] {
 
   def MAP2[A, B, Z](fa: F[A], fb: F[B])(f: (A, B) => Z): F[Z] = APPLY(fa)(MAP(fb)(b => f(_, b)))
 
-  def TUPLE[A, B](fa: F[A], fb: F[B]): F[(A, B)] = MAP2(fa, fb)((a, b) => (a, b))
+  def TUPLE[A, B](fa: F[A], fb: F[B]): F[(A, B)] = MAP2(fa, fb)(identity(_,_))
 
   //similar to lift on functor
   def FLIP[A, B](ff: F[A => B]): F[A] => F[B] = fa => APPLY(fa)(ff)

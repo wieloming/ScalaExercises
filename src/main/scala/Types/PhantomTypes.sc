@@ -1,20 +1,18 @@
-sealed trait ServiceState
+trait Op
+trait Open extends Op
+trait Close extends Op
 
-final class Started extends ServiceState
+trait Door[O <: Op]
+object Door {
+  def apply[S <: Op] = new Door[S] {}
 
-final class Stopped extends ServiceState
-
-class Service[State <: ServiceState] private() {
-  def start[T >: State <: Stopped]() = this.asInstanceOf[Service[Started]]
-
-  def stop[T >: State <: Started]() = this.asInstanceOf[Service[Stopped]]
+  def open[S <: Close](d: Door[S]) = Door[Open]
+  def close[S <: Open](d: Door[S]) = Door[Close]
 }
 
-object Service {
-  def create() = new Service[Stopped]
-}
+val closeDoor = Door[Close]
+val openDoor = Door.open(closeDoor)
+val closeAgainDoor = Door.close(openDoor)
 
-val stopped = Service.create()
-val started = stopped.start()
-val stopped2 = started.stop()
-stopped2.stop()
+ val closeCloseDoor = Door.close(closeDoor)
+ val openOpenDoor = Door.open(openDoor)
