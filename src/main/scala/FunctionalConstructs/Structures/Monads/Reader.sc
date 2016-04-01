@@ -13,3 +13,10 @@ case class Reader[A, B](run: A => B) {
     }
   }
 }
+
+val res = for {
+  msg <- Reader[String, String](identity)
+  revMsr = msg.reverse
+} yield revMsr
+
+res.run("pac")
