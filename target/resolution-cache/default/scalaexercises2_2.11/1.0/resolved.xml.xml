@@ -4,7 +4,7 @@
 		module="scalaexercises2_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20151025111328"
+		publication="20160324160218"
 	>
 		<description>
 		ScalaExercises2
@@ -27,7 +27,9 @@
 	</configurations>
 	<publications>
 		<artifact name="scalaexercises2_2.11" type="pom" ext="pom" conf="pom"/>
-		<artifact name="scalaexercises2_2.11" type="jar" ext="jar" conf="optional" e:classifier="download, resolveClassifiers, resolveSbtClassifiers"/>
+		<artifact name="scalaexercises2_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="scalaexercises2_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="scalaexercises2_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>

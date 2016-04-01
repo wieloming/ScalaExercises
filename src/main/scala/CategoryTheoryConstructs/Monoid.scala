@@ -1,6 +1,5 @@
 package CategoryTheoryConstructs
 
-//for filter on futures
 trait Monoid[T] extends Semigroup[T] {
   override def combine(a1: T, a2: T): T
   def id: T
@@ -21,8 +20,8 @@ object Monoid {
 }
 
 object Test {
-  def plus[A: Monoid](a: A, b: A): A =
-    implicitly[Monoid[A]].combine(a, b)
+  def plus[A](a: A, b: A)(implicit M: Monoid[A]): A =
+    M.combine(a, b)
 
   plus(2, 3)
 

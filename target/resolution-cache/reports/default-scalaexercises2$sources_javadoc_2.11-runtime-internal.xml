@@ -7,7 +7,7 @@
 		revision="1.0"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160309180710"/>
+		date="20160321205434"/>
 	<dependencies>
 		<module organisation="com.chuusai" name="shapeless_2.11">
 			<revision name="2.2.5" status="release" pubdate="20150722195017" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">

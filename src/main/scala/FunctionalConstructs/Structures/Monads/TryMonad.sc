@@ -15,7 +15,7 @@ def TRY[T, F](fn: T => F) = (value: T) => {
 def pipeTRY[T](values: Function[T, TRY]*): Function[T, TRY] = {
   def pipeToSeq(values: Function[T, TRY]*): Seq[Function[T, TRY]] = {
     values.toList match {
-      case f1 :: Nil => Seq(values(0))
+      case f1 :: Nil => Seq(f1)
       case f1 :: f2 :: Nil => Seq((v: T) => {
         f1(v) match {
           case SUCCESS(x: T) => f2(x)

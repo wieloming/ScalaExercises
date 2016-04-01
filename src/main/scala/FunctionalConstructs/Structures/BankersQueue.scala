@@ -1,6 +1,9 @@
 package FunctionalConstructs.Structures
 
-class BankersQueue[+A] private(val frontSize: Int, val front: Stream[A], val rearSize: Int, val rear: Stream[A]) {
+class BankersQueue[+A] private(val frontSize: Int,
+                               val front: Stream[A],
+                               val rearSize: Int,
+                               val rear: Stream[A]) {
 
   val length = frontSize + rearSize
 
