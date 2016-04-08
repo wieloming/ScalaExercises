@@ -1,15 +1,15 @@
 sealed trait OPTION
 
 case class SOME(value: Any) extends OPTION
-case class NONE(value: Any = null) extends OPTION
+case object NONE extends OPTION
 
 def OPTION  (value: Any): OPTION = value match {
-  case null => NONE()
+  case null => NONE
   case _ => SOME(value)
 }
 def getOrElse[T](option: OPTION, el: T) = option match {
   case SOME(x) => x
-  case NONE(_) => el
+  case NONE => el
 }
 def liftToOption[T](f: Any => T) = (el: Any) => OPTION(f(el))
 

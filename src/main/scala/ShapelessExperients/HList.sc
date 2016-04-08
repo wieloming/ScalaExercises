@@ -8,5 +8,7 @@ def thirdIsTrue(hlist: HList) = hlist match {
   case _ => false
 }
 
+hlist1 ::: hlist2
+
 thirdIsTrue(hlist1)
 thirdIsTrue(hlist2)
