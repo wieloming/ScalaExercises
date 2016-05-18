@@ -22,11 +22,11 @@ object ExtendedFuture extends App {
       case None => Future.successful(None)
     }
   }
-  def flatTraverse[A, B, F[B] <: Iterable[B]](in: Seq[A])(fn: A => Future[F[B]]): Future[Seq[B]] =
+  def flatTraverse[A, B, F[B]](in: Seq[A])(fn: A => Future[F[B]])(implicit ev: F[B] => Iterable[B]): Future[Seq[B]] =
     in.foldLeft(Future.successful[Seq[B]](Nil)) { (acc, el) =>
       for (r <- acc; b <- fn(el)) yield r ++ b
     }
   futureSequence(Seq(Future(1), Future(2), Future(3))).map(println)
-  flatTraverse(Seq(1,2,3))(x => Future(Seq(x)))
+  flatTraverse(Seq(1,2,3))(x => Future(Seq(x))).map(println)
   readLine()
 }
