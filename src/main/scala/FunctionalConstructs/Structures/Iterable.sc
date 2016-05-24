@@ -42,12 +42,12 @@ def FOLDLEFT[T, G](f: (G, T) => G, sum: G, list: List[T]): G = {
   sum
 }
 def MAP[T](list: List[T], f: (T) => T) = {
-  val result = FOLDLEFT((sum: List[T], el:T) => CONS(f(el), sum), NIL, list)
+  val result = FOLDLEFT((sum: List[T], el: T) => CONS(f(el), sum), NIL, list)
   FLIP(result)
 }
-def FILTER[T](list: List[T], f: Any=>Boolean) = {
-  val result = FOLDLEFT((sum:List[T], el:T) => {
-    if(f(el)) CONS(el, sum)
+def FILTER[T](list: List[T], f: Any => Boolean) = {
+  val result = FOLDLEFT((sum: List[T], el: T) => {
+    if (f(el)) CONS(el, sum)
     else sum
   }, NIL, list)
   FLIP(result)
@@ -65,6 +65,8 @@ println(LENGTH(list))
 println("FOLDLEFT")
 println(FOLDLEFT[String, String]((el, sum) => el + sum, "", list))
 println("MAP")
-MAP[String](list, (el) => {el.toUpperCase})(println)
+MAP[String](list, (el) => {
+  el.toUpperCase
+})(println)
 println("FILTER")
 FILTER(list, el => el != "b")(println)

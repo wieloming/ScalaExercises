@@ -1,4 +1,4 @@
-class Entity{
+class Entity {
   def persistForReal() = println("Wszystko wybucha i ogniem zieje")
 }
 

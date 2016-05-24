@@ -1,5 +1,6 @@
 trait SimplestContainer {
-  type A      // Abstract Type Member
+  type A
+  // Abstract Type Member
   def value: A
 }
 

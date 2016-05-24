@@ -14,5 +14,5 @@ val closeDoor = Door[Close]
 val openDoor = Door.open(closeDoor)
 val closeAgainDoor = Door.close(openDoor)
 
- val closeCloseDoor = Door.close(closeDoor)
- val openOpenDoor = Door.open(openDoor)
+val closeCloseDoor = Door.close(closeDoor)
+val openOpenDoor = Door.open(openDoor)

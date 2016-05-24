@@ -32,7 +32,7 @@ implicit def hconsParser[H: Parser, T <: HList : Parser]: Parser[H :: T] = new P
   }
 }
 // here happens some really strange magic
-implicit def classParser[A, R <: HList](implicit gen: Generic[A] {type Repr = R},  parser: Parser[R]): Parser[A] = new Parser[A] {
+implicit def classParser[A, R <: HList](implicit gen: Generic[A] {type Repr = R}, parser: Parser[R]): Parser[A] = new Parser[A] {
   //.map(gen.from) changes from Option[R](returned by parser) to Option[A]
   def apply(s: String): Option[A] = parser(s).map(gen.from)
 }
