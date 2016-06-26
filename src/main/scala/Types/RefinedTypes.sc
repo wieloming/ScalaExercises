@@ -3,9 +3,7 @@ class Entity {
 }
 
 trait Persister {
-  def doPersist(e: Entity) = {
-    e.persistForReal()
-  }
+  def doPersist(e: Entity) = e.persistForReal()
 }
 
 // our refined instance (and type):

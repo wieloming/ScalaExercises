@@ -14,11 +14,11 @@ case class Turtle(position: Point, heading: Int, color: Color) {
 val żółwik = Turtle(Point(2, 3), 0, Color(255, 255, 255))
 
 //Scalaz magic:
-val turtlePosition = Lens.lensu[Turtle, Point] (
+val turtlePosition = Lens.lensu[Turtle, Point](
   (a, value) => a.copy(position = value),
   _.position
 )
-val pointX = Lens.lensu[Point, Int] (
+val pointX = Lens.lensu[Point, Int](
   (a, value) => a.copy(x = value),
   _.x
 )
